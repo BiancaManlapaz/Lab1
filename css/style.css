@@ -1,15 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     background-color: ghostwhite;
 }
 
 header {
     padding: 20px;
-    margin-bottom: 24px;
     text-align: center;
     color:white;
-    background-color: aqua;
+    background-color:hotpink;
 }
 
 main {
-    
+    color:white;
+    background-color: hotpink;
+}
+
+footer {
+    color:white;
+    background-color: hotpink;
+}
+
+@media(min-width: 768px) {
+    article1{
+        display: inline-block;
+        width: 30%;
+        margin-right: 3%;
+        vertical-align: top;
+    }
+    article2{
+        display: inline-block;
+        width: 30%;
+        margin-right: 3%;
+        vertical-align: top;
+    }
+    article3{
+        display: inline-block;
+        width: 30%;
+        margin-right: 3%;
+        vertical-align: top;
+    }
 }
