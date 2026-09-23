@@ -8,4 +8,4 @@ Version 1.4: Dark background boxes around articles/cards is fixed using @media o
 Version 1.5: Dark background boxes around article/cards is fixed using @media (width <768px) and @media width(width >=768px). This is less optimal, but is the method shown on lecture slides.
 Version 1.6: Same as 1.5 but I unadded a mistake Quick Links header from the intro.
 
-Note that both version 1.4 and 1.6 are virtually the same, they just use different ways of fixing mobile/desktop view. This webpage is submitted to Quercus using version 1.5. However, I know that version 1.4 is probably better though because it uses less lines.
+Note that both version 1.4 and 1.6 are virtually the same, they just use different ways of fixing mobile/desktop view. This webpage is submitted to Quercus using version 1.6. However, I know that version 1.4 is probably better though because it uses less lines.
