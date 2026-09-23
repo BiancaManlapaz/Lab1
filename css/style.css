@@ -66,8 +66,15 @@ footer { /* Nothing notable other than the margin to separate the footer from ma
     width: 100%;
 }
 
-@media only screen and (min-width: 768px) { /* When on desktop, the articles are in a row. When on mobile or smaller screen, the articles/cards
-    will be displayed in a column.*/
+@media (width <768px) { /* When on mobile or smaller screen, the articles/cards will be displayed in a column.*/
+    .card {
+        width: 100%;
+        margin-bottom: 16px;
+        vertical-align: top; /* Everything aligned at the top so it looks neat.*/
+    }
+}
+
+@media (width >=768px) { /* When on desktop, the articles are in a row.*/
     .card { /* I used the card class here so that I wouldn't have to assign the same lines to each article (removing redundancy).*/
         display: inline-block;
         width: 30%;
