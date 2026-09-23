@@ -3,33 +3,47 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lab 1: Developper Profile</title>
+	<title>Lab 1: Card Portfolio Showcase</title>
 </head>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Link to css-->
 <body>
 
-	<header>
+	<header> <!-- Header here only contains title.-->
 		<h1>Student Showcase</h1>
 	</header>
 
-	
-	<main>
-		<section class="intro">
+	<main> <!-- Main section includes the personal intro and the project cards. I like numerating my sections so I dont get confused later when applying css.
+		in this case, I never used css applied to any section so the numeration here is just for my own sense of organisation.-->
+		<section1 class="intro">
 			<h2>Developer Profile</h2>
-			<p>My name is Bianca Manlapaz and I'm a 3rd year student at UTM :)</p>
-		</section>
+			<p>My name is Bianca Manlapaz and I'm a 3rd year student in the DEM program at UTM :) I love coding HTML and CSS!</p>
+		</section1>
 
-		<section class="cardsContainer">
+		<section2 class="cardsContainer"> <!-- The class cardsContainer here can technically be an ID because this is only a 1 page website but I'm assigning it as a class in case
+			if I want to apply the same css styling to another webpage. The name itself also helps me differentiate the sections.-->
 			<h3>Quick Links</h3>
-			<article1>Project 1</article1>
-			<article2>Project 2</article2>
-			<artcile3>Project 3</artcile3>
-		</section>
+			<article1 class="card">Project 1 <!-- I assigned the card class to each article because if I were to make another page for this website I would probably use the same styling.
+				Also, it's convenient to group all of the articles into a class so when I apply the css mobile/desktop orientation styling I don't have to repeat the same lines per article.-->
+				<p>Hunger, 2024.</p>
+				<image class="image" src="photos/hunger.jpeg"></image> <!-- I wanted to have fun stuff in my cards so I put some of my illustrations in them so they look like actual cards.
+				Used a class to help center the image to the article.-->
+			</article1>
+			<article2 class="card">Project 2
+				<p>Portrait in Purple, 2025.</p>
+				<image class="image" src="photos/purple.jpeg"></image>
+			</article2>
+			<artcile3 class="card">Project 3
+				<p>Finality, 2025. Unfinished.</p>
+				<image class="image" src="photos/finality.jpeg"></image>
+			</article3>
+		</section2>
 	</main>
 
 	<footer>
 		<p> © 2026 Student Showcase </p> 
 	</footer>
+
+<!-- Other notes: I like to add spaces between sections so it's easier to see the sections. Can you tell I do a lot of things to help differentiate the sections visually in my HTML code... -->
 
 </body>
 </html>

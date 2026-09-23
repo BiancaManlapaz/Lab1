@@ -1,47 +1,74 @@
-* {
+* { /* This is the universal reset. I like to put it at the beginning of my css file so I never forget it!*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-    background-color: ghostwhite;
+    background-color: whitesmoke;
 }
 
-header {
+header {    /* The important part of the header is the padding and the separation of the block from the rest of the sections. I coloured the 
+    background differently so it's easy to see. Text is centered as well, according to the guidelines of the lab.*/
     padding: 20px;
     text-align: center;
-    color:white;
+    color:whitesmoke;
     background-color:hotpink;
 }
 
+.intro{ /* The intro is part of the main section. Again, coloured the background differently so that it's easy to see. Also added a margin to 
+    the bottom so that all the text isn't squished together with the cards because it was really annoying me.*/
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    color: hotpink;
+}
+
+.cardsContainer { 
+    display: block; /* The display here has to be block because the articles/cards orient themselves weirdly if it isn't. When viewing on 
+    desktop, I want them to be in a row.*/
+    background-color: whitesmoke;
+    color: hotpink;
+    width: 100%;
+}
+
+.image { /* I added images to the cards. The class is used so that I don't have to assign the same lines to each image, removing redundancy.
+    Also, it makes each image a perfect square and aligned to the center of each article/card because it was annoying me that each card only
+    had content that was aligned to the left (I'm sorry it looked so weird to me, I needed to do it!)*/
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 main {
-    color:white;
-    background-color: hotpink;
+    background-color: whitesmoke;
 }
 
-footer {
-    color:white;
+footer { /* Nothing notable other than the margin to separate the footer from main and the text aligned to the center to match the header.*/
+    color:whitesmoke;
     background-color: hotpink;
+    margin-top: 24px;
+    text-align: center;
 }
 
-@media(min-width: 768px) {
-    article1{
-        display: inline-block;
-        width: 30%;
-        margin-right: 3%;
-        vertical-align: top;
-    }
-    article2{
-        display: inline-block;
-        width: 30%;
-        margin-right: 3%;
-        vertical-align: top;
-    }
-    article3{
-        display: inline-block;
-        width: 30%;
-        margin-right: 3%;
-        vertical-align: top;
-    }
+.card { /* Each card is coloured dark so that it has maximum contrast with the rest of the webpage. Added margin to the bottom so that the 
+    elements aren't squished with the footer.*/
+    margin-bottom: 20px;
+    background-color:rgb(32, 16, 24); /* I don't like pure black so this will have to do.*/
+    color: hotpink;
+    padding: 10px; /* I added padding because I didn't like how the text and images were flush to the edge of the cards container.*/
 }
+
+
+@media only screen and (min-width: 768px) { /* When on desktop, the articles are in a row. When on mobile or smaller screen, the articles/cards
+    will be displayed in a column.*/
+    .card { /* I used the card class here so that I wouldn't have to assign the same lines to each article (removing redundancy).*/
+        display: inline-block;
+        width: 30%;
+        margin-right: 3%;
+        vertical-align: top; /* Everything aligned at the top so it looks neat.*/
+    }
+
+    /* Other notes: A lot of the styling here is extra and not listed on the lab instructions. I cannot stand when my webpage looks weird and
+    unorganized and messy, sorry. I hope the extra styling doesn't negatively affect my grade.*/
