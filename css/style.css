@@ -14,11 +14,13 @@ header {    /* The important part of the header is the padding and the separatio
     text-align: center;
     color:whitesmoke;
     background-color:hotpink;
+    width: 100%;
 }
 
 .intro{ /* The intro is part of the main section. Again, coloured the background differently so that it's easy to see. Also added a margin to 
     the bottom so that all the text isn't squished together with the cards because it was really annoying me.*/
     margin-bottom: 20px;
+    width: 100%;
     background-color: whitesmoke;
     color: hotpink;
 }
@@ -43,6 +45,7 @@ header {    /* The important part of the header is the padding and the separatio
 
 main {
     background-color: whitesmoke;
+    width: 100%;
 }
 
 footer { /* Nothing notable other than the margin to separate the footer from main and the text aligned to the center to match the header.*/
@@ -50,16 +53,18 @@ footer { /* Nothing notable other than the margin to separate the footer from ma
     background-color: hotpink;
     margin-top: 24px;
     text-align: center;
+    width: 100%;
 }
 
 .card { /* Each card is coloured dark so that it has maximum contrast with the rest of the webpage. Added margin to the bottom so that the 
     elements aren't squished with the footer.*/
+    display: inline-block; /* This line is imperative because it makes the dark background colour fill the gaps and differentaite each article/card on mobile.*/
     margin-bottom: 20px;
     background-color:rgb(32, 16, 24); /* I don't like pure black so this will have to do.*/
     color: hotpink;
     padding: 10px; /* I added padding because I didn't like how the text and images were flush to the edge of the cards container.*/
+    width: 100%;
 }
-
 
 @media only screen and (min-width: 768px) { /* When on desktop, the articles are in a row. When on mobile or smaller screen, the articles/cards
     will be displayed in a column.*/
