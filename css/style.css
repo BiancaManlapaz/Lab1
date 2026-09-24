@@ -26,7 +26,7 @@ header {    /* The important part of the header is the padding and the separatio
 }
 
 .cardsContainer { 
-    display: block; /* The display here has to be block because the articles/cards orient themselves weirdly if it isn't. When viewing on 
+    display: inline-block; /* The display here has to be block because the articles/cards orient themselves weirdly if it isn't. When viewing on 
     desktop, I want them to be in a row.*/
     background-color: whitesmoke;
     color: hotpink;
@@ -62,25 +62,28 @@ footer { /* Nothing notable other than the margin to separate the footer from ma
     margin-bottom: 20px;
     background-color:rgb(32, 16, 24); /* I don't like pure black so this will have to do.*/
     color: hotpink;
-    padding: 10px; /* I added padding because I didn't like how the text and images were flush to the edge of the cards container.*/
+    padding: 10px; /* I added padding because I didn't like how the text and images were flush to the edge of the cards container, although this isn't necessary.*/
     width: 100%;
 }
 
-@media (width <768px) { /* When on mobile or smaller screen, the articles/cards will be displayed in a column.*/
-    .card {
-        width: 100%;
-        margin-bottom: 16px;
-        vertical-align: top; /* Everything aligned at the top so it looks neat.*/
-    }
-}
-
-@media (width >=768px) { /* When on desktop, the articles are in a row.*/
-    .card { /* I used the card class here so that I wouldn't have to assign the same lines to each article (removing redundancy).*/
+@media (width >=768px) { /* When on desktop, the articles are in a row. On mobile, the articles are vertically stacked.*/
+    .card { /* I used the card class here so that I wouldn't have to assign the same lines to each article (removing redundancy) and in case I use articles in different places.*/
         display: inline-block;
         width: 30%;
         margin-right: 3%;
         vertical-align: top; /* Everything aligned at the top so it looks neat.*/
     }
+}
 
-    /* Other notes: A lot of the styling here is extra and not listed on the lab instructions. I cannot stand when my webpage looks weird and
-    unorganized and messy, sorry. I hope the extra styling doesn't negatively affect my grade.*/
+/* 
+ADDITIONALLY: there is also this way of calling @media. This was the version used in 1.4.
+@media only screen and (min-width: 768px) {
+    .card {
+        display: inline-block;
+        width: 30%;
+        margin-right: 3%;
+        vertical-align: top;
+    }
+*/
+/* Other notes: A lot of the styling here is extra and not listed on the lab instructions. I cannot stand when my webpage looks weird and
+unorganized and messy, sorry. I hope the extra styling doesn't negatively affect my grade.*/
